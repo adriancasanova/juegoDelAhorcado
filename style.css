@@ -1,0 +1,88 @@
+#video_background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+
+.vector {
+  position: absolute;
+  left: 84px;
+  top: 40px;
+  bottom: 0%;
+}
+
+
+a {
+  max-width: 10%;
+  text-decoration: none;
+}
+
+input:focus {
+  outline: 0;
+  outline: none;
+}
+
+
+.botonEncriptar {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  display: block;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  color: #fff;
+  background: linear-gradient(#244451, #80a0ab);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  height: 67px;
+  width: 328px;
+  margin-bottom: 22px;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.botonEncriptar:hover,
+.botonEncriptar:focus, .botonDesencriptar:hover,.botonDesencriptar:focus  {
+  color: #080707;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  width: 338px;
+}
+
+
+.botonDesencriptar {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  display: block;
+  margin: auto;
+  color: #f6f8fa;
+  background: linear-gradient(#244451, #80a0ab);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  height: 67px;
+  width: 328px;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+@media (max-width: 992px) {
+  .botonDesencriptar,
+  .botonEncriptar {
+    width: 80%;
+    height: 300px !important;
+    display: flex;
+  }
+  .botonGroup {
+    width: 80%;
+    height: 300px !important;
+    margin: center;
+  }
+}
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Juego de ahorcado</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <video
+        autoplay="autoplay"
+        loop="loop"
+        id="video_background"
+        preload="auto"
+        volume="50"
+      >
+        <source src="../imagenes/181881-867575967_small.mp4" type="video/mp4" />
+      </video>
+      <section>
+        <div class="botonGroup">
+          <a href="iniciarJuego.html">
+            <button class="botonEncriptar" id="botonEncriptar">
+              Iniciar juego
+            </button>
+          </a>
+          <a href="agregarPalabra.html">
+            <button class="botonDesencriptar" id="botonDesencriptar">
+              Agregar nueva palabra
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

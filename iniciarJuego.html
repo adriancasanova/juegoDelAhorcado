@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Juego de ahorcado</title>
+    <link rel="stylesheet" href="iniciarJuego.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="36"
+      height="36"
+      fill="currentColor"
+      class="bi bi-droplet-fill"
+      viewBox="0 0 16 16"
+    >
+      <symbol id="loss">
+        <path
+          d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13"
+          fill="red"
+        />
+      </symbol>
+    </svg>
+  </head>
+  <body id="body">
+    <video autoplay="autoplay" loop="loop" id="video_background" preload="auto">
+      <source src="../imagenes/181881-867575967_small.mp4" type="video/mp4" />
+    </video>
+
+    <div id="mensaje"></div>
+
+    <div class="botonGroup">
+      <canvas width="700" height="700">
+        <div onkeydown="onKeyDown(event);"></div>
+      </canvas>
+
+      <div class="boton-flex">
+        <a href="iniciarJuego.html">
+          <button class="botonEncriptar" id="botonEncriptar">
+            Nuevo juego
+          </button>
+        </a>
+        <a href="index.html">
+          <button class="botonDesencriptar" id="botonDesencriptar">
+            Desistir
+          </button>
+        </a>
+      </div>
+    </div>
+
+  
+    <div id="popup-window" class="popup-window">
+      <svg class="bi me-1" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-2" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-3" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-4" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-5" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-6" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-7" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-8" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-9" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-10" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-11" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+      <svg class="bi me-12" width="36" height="36">
+        <use xlink:href="#loss" />
+      </svg>
+
+      <h1>¡Has Perdido!</h1>
+      <p>No te preocupes puedes intenarlo de nuevo</p>
+      <button id="close-button" class="botonDesencriptar">Cerrar</button>
+    </div>
+
+    <div id="popup-window-ganado" class="popup-window-ganado">
+      <h1>¡Has ganado!</h1>
+      <p>¡Felicitaciones, te has salvado por un pelo!</p>
+      <button id="close-button-ganado" class="botonDesencriptar">Cerrar</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

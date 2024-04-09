@@ -1,0 +1,119 @@
+
+#video_background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+}
+
+
+
+
+.vector {
+color: #e5e5e5;
+} 
+
+ .input {
+  position: relative;
+  height: 48px;
+  width: 577px;
+  margin-left: 30px;
+  border-radius: nullpx;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0a3871;
+  border: none;
+  background-color: #e5e5e5;
+}
+
+input:focus {
+  outline: 0;
+  outline: none;
+}
+
+
+::placeholder {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #244451;
+}
+.container-danger {
+  margin-left: 30px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  
+}
+.vectorText {
+  margin-left: 10px;
+  color: #ffff;
+}
+
+p img {
+  margin-right: 10px;
+}
+
+
+
+.botonGroup {
+  max-width: 40%;
+  margin: auto;
+  
+}
+
+.boton-flex {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+.botonEncriptar {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  display: block;
+  margin: auto;
+  color: #fff;
+  background: linear-gradient(#244451, #80a0ab);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  height: 67px;
+  width: 328px;
+  margin-bottom: 22px;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.botonEncriptar:hover,
+.botonEncriptar:focus, .botonDesencriptar:hover,.botonDesencriptar:focus  {
+  color: #080707;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+
+.botonDesencriptar {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  display: block;
+  margin: auto;
+  color: #f6f8fa;
+  background: linear-gradient(#244451, #80a0ab);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  height: 67px;
+  width: 328px;
+  border-radius: 24px;
+  padding: 24px;
+}
